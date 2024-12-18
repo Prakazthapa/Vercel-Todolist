@@ -40,6 +40,6 @@ app.post("/add", (req, res) => {
     .catch((err) => res.json(err));
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("Server is Running");
 });
