@@ -1,0 +1,111 @@
+html {
+    background-image: url('./../images/todolist.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_header {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family:'Courier New', Courier, monospace;
+}
+.main_header::after {
+    content: '';
+    display: block;
+    border:5px solid aqua;
+}
+.create_form input{
+    width: 900px;
+    padding: 10px;
+    border-bottom: 2px solid;
+    outline:none;
+    border-radius: 25px;
+}
+.create_form button {
+    padding: 10px 20px;          
+    margin-left: 10px;   
+    background-color: #4CAF50;      
+    color: white;                    
+    font-size: 16px;                 
+    border: none;                    
+    cursor: pointer;                 
+    border-radius: 25px;            
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+}
+.create_form button:hover{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+.task {
+    display: flex;
+    align-items: center;
+    width: 1001px;
+    justify-content: space-between;
+    /* color: white; */
+    height: 35px;
+    padding: 2px 5px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+div .task:nth-child(7n+1) {
+    background-color: red;
+}
+
+div .task:nth-child(7n+2) {
+    background-color: orange;
+}
+
+div .task:nth-child(7n+3) {
+    background-color: yellow;
+}
+
+div .task:nth-child(7n+4) {
+    background-color: green;
+}
+
+div .task:nth-child(7n+5) {
+    background-color: blue;
+}
+
+div .task:nth-child(7n+6) {
+    background-color: indigo;
+}
+
+div .task:nth-child(7n+7) {
+    background-color: violet;
+}
+div .task:nth-child(odd){
+    color: black;
+}
+div .task:nth-child(even){
+    color: white;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.checkbox .icon {
+    margin-right: 5px;
+    font-size: 15px;
+    color:white;
+}
+.icon {
+    color:black;
+}
+.task div span {
+    margin: 0px 5px 0px 4px;
+}
+.task div .icon {
+    cursor: pointer;
+}
+.line_through {
+    text-decoration: line-through;
+}
